@@ -23,44 +23,36 @@
   <main>
     <div class="calculator-container">
       <form>
-        <div>
+        <div class="input-div">
           <label for="bill" class="label">Bill</label>
-          <input class="input-field bill-input" type="number" id="bill">
+          <input class="input-field bill-input" type="number" id="bill" min="0">
         </div>
-        <div role="radiogroup" aria-labelledby="tip">
+        <div role="radiogroup" aria-labelledby="tip" class="input-div">
           <label for="tip" class="label">Select Tip %</label>
-          <span>
+          <span class="radio-span">
+            <input type="radio" id="tip-5" value="0.05" name="tip">
             <label for="tip-5" class="label">5%</label>
-            <input type="radio" id="tip-5" value="0.05" name="5%">
-          </span>
-          <span>
+            <input type="radio" id="tip-10" value="0.1" name="tip">
             <label for="tip-10" class="label">10%</label>
-            <input type="radio" id="tip-10" value="0.1" name="10%">
-          </span>
-          <span>
+            <input type="radio" id="tip-15" value="0.15" name="tip">
             <label for="tip-15" class="label">15%</label>
-            <input type="radio" id="tip-15" value="0.15" name="15%">
-          </span>
-          <span>
-            <label for="tip-25" class="label">25</label>
-            <input type="radio" id="tip-25" value="0.25" name="25%">
-          </span>
-          <span>
+            <input type="radio" id="tip-25" value="0.25" name="tip">
+            <label for="tip-25" class="label">25%</label>
+            <input type="radio" id="tip-50" value="0.5" name="tip">
             <label for="tip-50" class="label">50%</label>
-            <input type="radio" id="tip-50" value="0.5" name="50%">
-          </span>
-          <span>
-            <label for="tip-custom" class="label">Custom</label>
-            <input type="radio" id="tip-custom" value="0" name="Custom">
+            <input type="radio" id="tip-custom" value="0" name="tip">
+            <label for="tip-custom" class="label custom-label">Custom</label>
           </span>
         </div>
-        <div>
+        <div class="input-div">
           <label for="people" class="label">Number of People</label>
-          <input class="input-field people-input" type="number" id="people">
+          <input class="input-field people-input" type="number" id="people" min="0">
         </div>
       </form>
     </div>
-    <div class="results-container"></div>
+    <div class="results-container">
+      
+    </div>
   </main>
   
 
