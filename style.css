@@ -127,3 +127,64 @@ input:focus {
   border: 1px solid var(--light-grayish-cyan);
   color: var(--very-dark);
 }
+
+.results-container {
+  background-color: var(--very-dark);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.result-label {
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+small {
+  font-size: 0.7rem;
+  color: var(--grayish-cyan);
+}
+
+strong {
+  font-size: 1.5rem;
+  color: var(--strong-cyan);
+}
+
+button {
+  width: 100%;
+  padding: 0.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: var(--strong-cyan);
+  color: var(--very-dark);
+  border: 1px solid var(--strong-cyan);
+}
+
+footer {
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center; 
+}
+    
+.attribution a { 
+  color: var(--strong-cyan); 
+}
